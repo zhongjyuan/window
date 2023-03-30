@@ -1,0 +1,55 @@
+{
+	"mouth": "index.html",
+	"name": "zhongjyuan-window",
+	"description": "zhongjyuan window ui",
+	"author": "zhongjyuan <zhongjyuan@outlook.com>",
+	"version": "1.0.0",
+	"keywords": [
+		"node-webkit",
+		"zhongjyuan",
+		"window"
+	],
+	"homepage": "zhongjyuan.club",
+	"repository": {
+		"type": "gitlab",
+		"url": "http://gitlab.zhongjyuan.club/window/zhongjyuan-window"
+	},
+	"nodejs": true,
+	"single-instance": true,
+	"window": {
+		"title": "zhongjyuan",
+		"icon": "link.png",
+		"toolbar": false,
+		"resizable": true,
+		"fullscreen": true,
+		"show_in_taskbar": true,
+		"frame": true,
+		"position": "center",
+		"width": 1366,
+		"height": 768,
+		"min_width": 400,
+		"min_height": 335,
+		"max_width": 800,
+		"max_height": 670,
+		"show": true,
+		"kiosk": false
+	},
+	"webkit": {
+		"plugin": true,
+		"java": false,
+		"page-cache": false
+	},
+	"scripts": {
+		"start": "http-server ./ -p 7077 -s"
+	},
+	"engines": {
+		"node": ">= 6.0.0",
+		"npm": ">= 3.0.0"
+	},
+	"dependencies": {
+		"http-server": "^13.0.1"
+	},
+	"devDependencies": {
+		"http-server": "^13.0.1"
+	}
+}

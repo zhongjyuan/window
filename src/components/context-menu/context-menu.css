@@ -1,0 +1,101 @@
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.zhongjyuan-context-menu {
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 150px;
+	height: auto;
+	background-color: rgb(61, 61, 61);
+	display: block;
+	/*border-radius: 5px;*/
+	z-index: 99999999;
+	color: white;
+	/*overflow: hidden;*/
+}
+.zhongjyuan-context-menu.sub {
+	left: 98%;
+	position: absolute;
+	display: none;
+}
+.zhongjyuan-context-menu.sub.left {
+	left: auto;
+	right: 98%;
+}
+.zhongjyuan-context-menu ul li:hover .zhongjyuan-context-menu.sub {
+	display: block;
+}
+.zhongjyuan-context-menu ul.left .zhongjyuan-context-menu.sub {
+	left: -100%;
+}
+.zhongjyuan-context-menu ul {
+	margin: 0px;
+	padding: 0px;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.54);
+}
+
+.zhongjyuan-context-menu ul li {
+	transition: background-color 0.5s;
+	cursor: default;
+	padding: 0px 1em;
+	list-style: none;
+	line-height: 30px;
+	height: 30px;
+	font-size: 10px;
+	/*overflow: hidden;*/
+	position: relative;
+}
+.zhongjyuan-context-menu ul li div.title {
+	width: 80%;
+	overflow: hidden;
+	height: 100%;
+	float: left;
+	word-break: break-all;
+}
+.zhongjyuan-context-menu ul li div.title.disable {
+	color: darkgrey;
+}
+.zhongjyuan-context-menu ul li.sub:after {
+	content: ">";
+	float: right;
+	transform: scale3d(0.5, 1.5, 1);
+	position: relative;
+}
+.zhongjyuan-context-menu ul li:hover {
+	background-color: #636363;
+}
+
+.zhongjyuan-context-menu ul li a {
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	color: #333;
+	outline: none;
+}
+
+.zhongjyuan-context-menu ul hr {
+	margin: 0;
+	height: 0;
+	border: 0;
+	border-bottom: rgba(132, 132, 132, 0.47) 1px solid;
+	border-top: none;
+}
+
+/*浅色主题*/
+.zhongjyuan-context-menu.light {
+	background-color: #e0e0e0;
+	border-color: #535353;
+	color: #333333;
+}
+.zhongjyuan-context-menu.light ul li:hover {
+	background-color: #707070;
+	color: #ffffff;
+}
+.zhongjyuan-context-menu.light ul hr {
+	border-color: #535353;
+}

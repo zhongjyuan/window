@@ -1,0 +1,31 @@
+{
+	"labels": [
+		"社交",
+		"视频",
+		"工具",
+		"zhongjyuan window",
+		"购物",
+		"壁纸",
+		"插件"
+	],
+	"apps": [
+		{
+			"title": "动态壁纸-星球大战",
+			"icon": "../zhongjyuan-wallpaper-starwar/preview.png",
+			"labels": ["zhongjyuan window", "壁纸"],
+			"url": "./res/apps/zhongjyuan-wallpaper-starwar/setup.html"
+		},
+		{
+			"title": "桌面时钟插件",
+			"icon": "../zhongjyuan-clock/preview.png",
+			"labels": ["zhongjyuan window", "插件"],
+			"url": "./res/apps/zhongjyuan-clock/setup.html"
+		},
+		{
+			"title": "计算器",
+			"icon": "../zhongjyuan-calculator/preview.png",
+			"labels": ["zhongjyuan window", "工具"],
+			"url": "./res/apps/zhongjyuan-calculator/setup.html"
+		}
+	]
+}

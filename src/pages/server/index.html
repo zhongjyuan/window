@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cn">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Server</title>
+		<script src="../../../res/zhongjyuan.app.js"></script>
+		<style>
+			body {
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Server</h1>
+		<script>
+			ZHONGJYUANAPP.onReady(function () {
+				var json = ZHONGJYUANAPP.eval("import", null, function (data) {
+					console.log(ZHONGJYUANAPP.id, data);
+				});
+			});
+		</script>
+	</body>
+</html>
